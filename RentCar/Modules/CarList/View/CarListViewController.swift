@@ -13,6 +13,7 @@ final class CarListViewController: UIViewController {
     private lazy var tableView = UITableView()
     
     private lazy var processingView = LoaderView()
+    private lazy var emptyStateView = EmptyStateView()
     private lazy var errorView = AppErrorView()
     
     var presenter: CarListViewInputProtocol?
@@ -96,6 +97,14 @@ extension CarListViewController: CarListViewOutputProtocol {
     
     func hideErrorView() {
         errorView.removeFromSuperview()
+    }
+    
+    func showEmptyView() {
+        view.addSubview(emptyStateView)
+        
+        emptyStateView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }
 

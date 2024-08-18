@@ -27,7 +27,7 @@ private extension MainButton {
         backgroundColor = .systemCyan
         setTitleColor(.white, for: .normal)
         
-        titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
+        titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         
         layer.cornerRadius = cornerRadius
     }

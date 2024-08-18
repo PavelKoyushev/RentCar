@@ -14,4 +14,5 @@ protocol CarListViewOutputProtocol: AnyObject {
     func hideLoader()
     func showErrorView()
     func hideErrorView()
+    func showEmptyView()
 }

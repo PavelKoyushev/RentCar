@@ -28,7 +28,11 @@ extension CarListPresenter: CarListViewInputProtocol {
 extension CarListPresenter: CarListInteractorOutputProtocol {
     
     func fetchedCarList(cars: [Car]) {
-        self.view?.showCarList(model: cars)
+        if cars.isEmpty {
+            self.view?.showEmptyView()
+        } else {
+            self.view?.showCarList(model: cars)
+        }
     }
     
     func selectedCar(item: Car) {

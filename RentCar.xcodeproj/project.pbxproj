@@ -39,6 +39,7 @@
 		E9874A0A2C480E6800FCF525 /* CarDetailInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9874A092C480E6800FCF525 /* CarDetailInteractorOutputProtocol.swift */; };
 		E9874A0C2C480F5D00FCF525 /* CarDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9874A0B2C480F5D00FCF525 /* CarDetailRouter.swift */; };
 		E9874A0E2C480F8700FCF525 /* CarDetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9874A0D2C480F8700FCF525 /* CarDetailRouterProtocol.swift */; };
+		E99E9FA62C71E45C0058104A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E9FA52C71E45C0058104A /* EmptyStateView.swift */; };
 		E9BF0FC92C4EC4AE00412A90 /* CarListCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BF0FC82C4EC4AE00412A90 /* CarListCellProtocol.swift */; };
 		E9FD73FD2C46674900041747 /* CarListInteractorOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD73FC2C46674900041747 /* CarListInteractorOutputProtocol.swift */; };
 		E9FD74032C46CAB200041747 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD74022C46CAB200041747 /* NetworkClient.swift */; };
@@ -90,6 +91,7 @@
 		E9874A092C480E6800FCF525 /* CarDetailInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailInteractorOutputProtocol.swift; sourceTree = "<group>"; };
 		E9874A0B2C480F5D00FCF525 /* CarDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailRouter.swift; sourceTree = "<group>"; };
 		E9874A0D2C480F8700FCF525 /* CarDetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailRouterProtocol.swift; sourceTree = "<group>"; };
+		E99E9FA52C71E45C0058104A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E9BF0FC82C4EC4AE00412A90 /* CarListCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCellProtocol.swift; sourceTree = "<group>"; };
 		E9FD73FC2C46674900041747 /* CarListInteractorOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListInteractorOutputProtocol.swift; sourceTree = "<group>"; };
 		E9FD74022C46CAB200041747 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				E98749FF2C47E48700FCF525 /* Loader */,
+				E99E9FA42C71E4340058104A /* Empty */,
 				E98749F92C47E1CC00FCF525 /* AppError */,
 			);
 			path = Views;
@@ -333,6 +336,14 @@
 				E9874A0B2C480F5D00FCF525 /* CarDetailRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		E99E9FA42C71E4340058104A /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				E99E9FA52C71E45C0058104A /* EmptyStateView.swift */,
+			);
+			path = Empty;
 			sourceTree = "<group>";
 		};
 		E9BF0FCA2C4EC4D700412A90 /* CarList */ = {
@@ -544,6 +555,7 @@
 				E9FD74032C46CAB200041747 /* NetworkClient.swift in Sources */,
 				E9874A0C2C480F5D00FCF525 /* CarDetailRouter.swift in Sources */,
 				E9874A012C47E4A800FCF525 /* LoaderView.swift in Sources */,
+				E99E9FA62C71E45C0058104A /* EmptyStateView.swift in Sources */,
 				E90FF8432C43BA5100595480 /* CarListAssembly.swift in Sources */,
 				E90B21792C443665003D4761 /* CarListViewOutputProtocol.swift in Sources */,
 				E9FD740E2C46CD1F00041747 /* NetworkError.swift in Sources */,
